@@ -10,20 +10,25 @@
   src: url(JosefinSans.ttf);
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
 
 .frame {
   display: flex;
   padding: 0;
   flex-direction: row;    
   width: 100%;
-  max-width: max-content;
+  height: 100%;
+  max-width: fit-content;
 }
 
 #gallery {
   display: flex;
   gap: 20px;
   overflow-x: scroll;
-  width: 1700px;
   flex-direction: row;
   max-width: max-content;
 }
@@ -31,7 +36,7 @@
 #gallery div {
   width: 100%;
   display: grid;
-  grid-template-rows: 5fr 5fr 5fr;
+  grid-template-rows: 1fr 1fr;
   flex: none;
   
 }
@@ -96,8 +101,9 @@ button#prevBtn {
   font-weight: 350;
   position: relative;
   text-align: center;
-  text-wrap: nowrap;
   font-family: my-font;
+  top: 0;
+  left: 0;
 
 }
 
@@ -105,10 +111,9 @@ button#prevBtn {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 15px;
   position: relative;
-  top: -2850px;
-  
+  top: -1750px;
+  left: 0px;
 }
 
 #buttonTabs button:hover {
