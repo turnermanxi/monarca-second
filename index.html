@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script type="module" src="/main.js"></script>
+  <div class="frame">
+    <button type="button" id="prevBtn"><img src="whitearrow2.jpg"></button>
+    <div id="gallery">
+            <div>
+                <span><img src='./project4.jpg'></span>
+            </div>
+            <div>
+                <span><img src='./inclogo.jpg'></span>
+            </div>
+            <div>
+                <span><img src='./project5.jpg'></span>
+            </div>     
+            <div>
+                <span><img src='./project6.jpg'></span>
+            </div>
+    </div>        
+    <button type="button" id="nextBtn"><img src="whitearrow2.jpg"></button>
+
+</div>
+<div id="buttonTabs">
+    <button type="button" id="aboutBtn">About</button>
+    <button type="button" id="contact">Contact Us</button>
+    <button type="button" id="Projects">Projects</button>
+</div>
+
+<dialog id="dialogBox">
+
+    <div class="formPart">
+        <form action="" method ="get" id="inputForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First and Last Name" minlength="3" maxlength="22" required>
+            
+
+            <fieldset>
+                <legend>Address</legend>
+                <input type="text" id="street" name="street" placeholder="Street" minlength="5" required>
+
+                <input type="text" id="cityState" name="cityState" placeholder="City, State">
+
+                <input type="text" id="zipCode" name="zipCode" placeholder="Zipcode">
+            </fieldset>
+            
+            <fieldset>
+                <legend>What can we do for you?</legend>
+                    <input type="text" id="explain" name="explain" required>
+            </fieldset>
+
+            <div class="dialogBtn">
+                <button type="submit" id="confirmBtn">Confirm</button>
+                <button type="button" id="cancelBtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+</dialog>
+</body>
+</html>
