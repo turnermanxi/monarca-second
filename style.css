@@ -21,7 +21,7 @@ body {
   padding: 0;
   flex-direction: row;    
   width: 100%;
-  height: 100%;
+  height: 70%;
   max-width: fit-content;
 }
 
@@ -112,7 +112,7 @@ button#prevBtn {
   flex-direction: row;
   justify-content: space-around;
   position: relative;
-  top: -1750px;
+  top: -1900px;
   left: 0px;
 }
 
