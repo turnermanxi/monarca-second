@@ -13,6 +13,8 @@
 body {
   display: grid;
   grid-template-columns: 1fr;
+  resize: both;
+  overflow: auto;
 
 }
 
