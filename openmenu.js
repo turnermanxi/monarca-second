@@ -16,11 +16,11 @@ export function pictureGallery () {
     
     nextBtn.addEventListener('click', () => {
         scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft += 1200;
+        scrollContainer.scrollLeft += 1350;
     });
     
     prevBtn.addEventListener('click', () => {
         scrollContainer.style.scrollBehavior = "smooth";
-        scrollContainer.scrollLeft -= 1200;
+        scrollContainer.scrollLeft -= 1350;
     });
 };
