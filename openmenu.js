@@ -11,13 +11,16 @@ export function pictureGallery () {
     scrollContainer.addEventListener('wheel', (evt) => {
         evt.preventDefault();
         scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
     });
     
     nextBtn.addEventListener('click', () => {
+        scrollContainer.style.scrollBehavior = "smooth";
         scrollContainer.scrollLeft += 1150;
     });
     
     prevBtn.addEventListener('click', () => {
+        scrollContainer.style.scrollBehavior = "smooth";
         scrollContainer.scrollLeft -= 1150;
     });
 };
