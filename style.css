@@ -12,7 +12,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(150px, 1fr))repeat(2, 1fr);
   resize: both;
   overflow: auto;
 
