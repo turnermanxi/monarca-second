@@ -6,7 +6,12 @@
 
 @font-face {
   font-family: my-font;
-  src: url(JosefinSans.ttf);
+  src: url(SulphurPoint-Regular.ttf);
+}
+
+@font-face {
+  font-family: my2-font;
+  src: url(Apple.OTF);
 }
 
 body {
@@ -48,8 +53,8 @@ body {
   opacity: 40%;
   max-width: 20%;
   position: absolute;
-  top: 0px;
-  left: 40px;
+  top: 0;
+  left: 5%;
   max-height: 19%;
 }
 
@@ -134,18 +139,16 @@ button#prevBtn {
 }
 
 #dialogBox {
-  
   position: relative;
   color: orange;
-  bottom: 200px;
   top: 20%;
   left: 20%;
   gap: 15px;
-  text-align: center;
-  font-family: my-font;
+  text-align: left;
+  font-family: my2-font;
+  font-weight: 1000;
   padding: 20px;
-  gap: 50px;
-  opacity: 80%;
+  opacity: 85%;
   border: none;
 }
 
@@ -156,11 +159,19 @@ input {
   border-radius: 3px;
 }
 
+.dialogBtn {
+  padding: 5px;
+  gap: 20px;
+  opacity: none;
+  
+}
+
 #confirmBtn {
   color: white;
   font-family: my-font;
   padding: 5px;
   gap: 10px;
+  font-weight: 800;
   
 }
 
@@ -169,6 +180,7 @@ input {
   font-family: my-font;
   padding: 5px;
   gap: 10px;
+  font-weight: 800;
   
 }
 
@@ -178,7 +190,31 @@ input {
   top: 0px;
   left: 0px;
   color: orange;
-  font-family: my-font;
+  font-family: my2-font;
   justify-content: space-around;
   text-align: center;
+  font-weight: 800;
 }
+
+.socials {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 20%;
+  left: 0px;
+  max-width: 3%;
+  min-height: auto;
+  gap: 25px;
+  overflow: visible;
+  z-index: +1;
+  
+}
+
+.social:hover{
+  width: 4rem;
+  height: 4rem;
+  max-width: 200%;
+  max-height: 200%;
+  margin-left: -10px;   
+}
+

@@ -19,4 +19,9 @@
     cancelBtn.addEventListener("click", () => {
         dialogBox.close();
     });
+
+    confirmBtn.addEventListener("click", () => {
+        inputForm.reset();
+        dialogBox.close();
+    });
 };
