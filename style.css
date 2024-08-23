@@ -222,7 +222,7 @@ input {
   flex-direction: column;
   top: 20%;
   left: 0px;
-  max-width: 1rem;
+  max-width: 1.7rem;
   min-height: auto;
   gap: 25px;
   overflow: visible;
