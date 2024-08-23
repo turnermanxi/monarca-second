@@ -33,7 +33,7 @@ body {
 
 #gallery {
   display: flex;
-  gap: 10px;
+  gap: 1px;
   overflow-x: scroll;
   flex-direction: row;
   box-sizing: border-box;
@@ -176,6 +176,7 @@ input {
   padding: 10px;
   border-radius: 3px;
   color: black;
+  max-width: 100%;
 }
 
 .dialogBtn {
