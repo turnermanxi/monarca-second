@@ -21,7 +21,8 @@ body {
   display: flex;
   flex-direction: row;
   inset: 0;
-  max-height: 80%; 
+  max-height: 80%;
+  margin: 0; 
 }
 
 #gallery {
@@ -97,13 +98,14 @@ button#prevBtn {
   background-color: transparent;
   border: none;
   font-size: 1.5rem;
-  font-weight: 30%;
+  font-weight: 800;
   position: relative;
   text-align: center;
   font-family: my-font;
   left: 0;
-  top: -500%;
-
+  top: -10rem;
+  width: 100%;
+  justify-content: center;
 
 }
 
@@ -165,4 +167,13 @@ input {
   padding: 5px;
   gap: 10px;
   
+}
+
+.aboutText {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  color: orange;
+  font-family: my-font;
 }
