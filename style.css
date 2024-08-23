@@ -50,6 +50,7 @@ body {
   box-sizing: border-box;
   height: 50%;
   z-index: -1;
+  opacity: 85%;
   
 }
 
@@ -74,9 +75,9 @@ img {
 .controlBtns{
   width: 100%;
   position: absolute;
-  top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  top: 0;
+  transform: translateY(-2%);
   color: white;
   display: flex;
   align-items: center;
@@ -93,6 +94,7 @@ img {
   border: none;
   padding: 10px;
   color: white;
+  
   
 }
 
@@ -137,7 +139,7 @@ img {
   flex-direction: row;
   gap: 15px;
   position: relative;
-  top: 0px;
+  top: 5%;
   left: 0px;
   justify-content: center;
 }
@@ -159,12 +161,13 @@ img {
   top: 20%;
   left: 20%;
   gap: 15px;
-  text-align: justify;
+  text-align: center;
   font-family: my2-font;
   font-weight: 1000;
   padding: 20px;
-  opacity: 85%;
+  opacity: 90%;
   border: none;
+  background-color: black;
 }
 
 
@@ -182,7 +185,7 @@ input {
 }
 
 #confirmBtn {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: my-font;
   padding: 5px;
   gap: 10px;
@@ -191,7 +194,7 @@ input {
 }
 
 #cancelBtn {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: my-font;
   padding: 5px;
   gap: 10px;
@@ -202,7 +205,7 @@ input {
 .aboutText {
   display: block;
   position: relative;
-  top: 0px;
+  top: 50%;
   left: 0px;
   color: orange;
   font-family: my2-font;
@@ -217,7 +220,7 @@ input {
   flex-direction: column;
   top: 20%;
   left: 0px;
-  max-width: 3%;
+  max-width: 2rem;
   min-height: auto;
   gap: 25px;
   overflow: visible;
