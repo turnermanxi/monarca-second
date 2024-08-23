@@ -16,7 +16,7 @@
 body {
   display: grid;
   resize: both;
-  grid-template-rows: 1fr;
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
   position: relative;
   background-color: black;
 }
@@ -28,7 +28,8 @@ body {
   flex-direction: row;
   inset: 0;
   margin: 0;
-  min-width: 100%; 
+  width: fit-content;
+  max-height: 70%;
 }
 
 #gallery {
@@ -36,23 +37,21 @@ body {
   gap: 1px;
   overflow-x: scroll;
   flex-direction: row;
-  box-sizing: border-box;
-  width: 100%;
-  
-  
+  max-width: 100%;
 }
 
 #gallery div {
-  width: 100%;
-  display: block;
-  grid-template-rows: 1fr 1fr;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
   flex: none;
-  box-sizing: border-box;
   height: 50%;
   z-index: -1;
   opacity: 85%;
   
+  
 }
+
 
 #logo1 {
   opacity: 40%;
@@ -60,7 +59,7 @@ body {
   position: absolute;
   top: 0;
   left: 5%;
-  max-height: 19%;
+  max-height: 10%;
 }
 
 img {
@@ -77,14 +76,12 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  transform: translateY(-2%);
+  transform: translateY(100%);
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: transparent;
-  
-
 }
 
 #nextBtn, #prevBtn {
@@ -123,7 +120,7 @@ img {
   color: orange;
   background-color: transparent;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
   position: relative;
   text-align: center;
@@ -131,6 +128,7 @@ img {
   left: 0;
   width: 100%;
   justify-content: center;
+  transform: translateY(-6rem);
 
 }
 
@@ -158,16 +156,18 @@ img {
 #dialogBox {
   position: relative;
   color: orange;
-  top: 20%;
-  left: 20%;
+  top: 10%;
+  left: 25%;
   gap: 15px;
   text-align: center;
   font-family: my2-font;
-  font-weight: 1000;
-  padding: 20px;
+  font-weight: bolder;
+  padding: 15px;
   opacity: 90%;
   border: none;
   background-color: black;
+  text-wrap: nowrap;
+
 }
 
 
@@ -214,6 +214,8 @@ input {
   justify-content: space-around;
   text-align: center;
   font-weight: 800;
+  font-size: 1.7rem;
+  transform: translateY(-5rem);
 }
 
 .socials {
@@ -222,7 +224,7 @@ input {
   flex-direction: column;
   top: 20%;
   left: 0px;
-  max-width: 1.7rem;
+  max-width: 1.3rem;
   min-height: auto;
   gap: 25px;
   overflow: visible;
@@ -230,7 +232,7 @@ input {
   
 }
 
-.social:hover{
+.igLogo:hover{
   width: 4rem;
   height: 4rem;
   max-width: 200%;
@@ -238,3 +240,17 @@ input {
   margin-left: -10px;   
 }
 
+#work1, #work2 {
+  width: 15em;
+  height: 30rem;
+}
+
+#work1 {
+  position: relative;
+  left: -20%;
+}
+
+#work2 {
+  position: relative;
+  left: 20%;
+}
