@@ -144,7 +144,7 @@ button#prevBtn {
   top: 20%;
   left: 20%;
   gap: 15px;
-  text-align: left;
+  text-align: justify;
   font-family: my2-font;
   font-weight: 1000;
   padding: 20px;
