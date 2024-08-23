@@ -22,7 +22,8 @@ body {
   flex-direction: row;
   inset: 0;
   max-height: 80%;
-  margin: 0; 
+  margin: 0;
+  max-width: 100%; 
 }
 
 #gallery {
@@ -31,6 +32,7 @@ body {
   overflow-x: scroll;
   flex-direction: row;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 #gallery div {
@@ -44,10 +46,11 @@ body {
 
 #logo1 {
   opacity: 40%;
-  max-width: 8%;
+  max-width: 20%;
   position: absolute;
   top: 0px;
   left: 40px;
+  height: 30%;
 }
 
 img {
@@ -103,7 +106,7 @@ button#prevBtn {
   text-align: center;
   font-family: my-font;
   left: 0;
-  top: -10rem;
+  top: -3rem;
   width: 100%;
   justify-content: center;
 
@@ -176,4 +179,6 @@ input {
   left: 0px;
   color: orange;
   font-family: my-font;
+  justify-content: space-around;
+  text-align: center;
 }
