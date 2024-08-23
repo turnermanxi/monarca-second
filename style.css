@@ -90,8 +90,7 @@ img {
   border: none;
   padding: 10px;
   color: white;
-  
-  
+  justify-content: space-between;
 }
 
 #nextBtn:focus, #prevBtn:focus {
