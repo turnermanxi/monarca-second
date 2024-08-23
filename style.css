@@ -109,7 +109,7 @@ img {
 #explain {
   width: 80%;
   height: 8rem;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -175,6 +175,7 @@ input {
   font-family: my-font;
   padding: 10px;
   border-radius: 3px;
+  color: black;
 }
 
 .dialogBtn {
