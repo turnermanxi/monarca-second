@@ -220,7 +220,7 @@ input {
   flex-direction: column;
   top: 20%;
   left: 0px;
-  max-width: 2rem;
+  max-width: 1rem;
   min-height: auto;
   gap: 25px;
   overflow: visible;
