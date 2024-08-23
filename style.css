@@ -92,14 +92,17 @@ img {
   border: none;
   padding: 10px;
   color: white;
+  opacity: 15%;
 }
 
 #nextBtn:focus, #prevBtn:focus {
   outline: none;
+  opacity: 90%;
 }
 
 #prevBtn {
   transform: rotate(180deg);
+  
 }
 
 #explain {
