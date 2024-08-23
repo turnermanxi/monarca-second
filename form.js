@@ -21,7 +21,6 @@
     });
 
     confirmBtn.addEventListener("click", () => {
-        inputForm.reset();
         dialogBox.close();
     });
 };
