@@ -7,110 +7,106 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 </head>
 <body>
-  <script type="module" src="/main.js"></script>
 
-  <div class="socials">
-      <a href="https://www.facebook.com/monarcaoutdoor"><img src="facebookLogo.jpeg" id="fbLogo"></a>
-      <a href="https://www.tiktok.com/@monarca.outdoor"><img src="tiktok-icon2.jpg" id="tikTok"></a>
-      <a href="https://www.instagram.com/monarca.outdoor/"><img src="Instagram_logo_2016.jpeg" id="igLogo"></a>
+  <script type="module" src="/main.js"></script>
+  <div class="container">
+      
+      <div class="socials">
+          <a href="https://www.facebook.com/monarcaoutdoor"><img src="facebookLogo.jpeg" id="fbLogo"></a>
+          <a href="https://www.tiktok.com/@monarca.outdoor"><img src="tiktok-icon2.jpg" id="tikTok"></a>
+          <a href="https://www.instagram.com/monarca.outdoor/"><img src="Instagram_logo_2016.jpeg" id="igLogo"></a>
+      </div>
+      <img src="logocolor.jpg" id="logo1">
+      <div class="frame">
+      
+        <div id="gallery">
+                <div>
+                    <span><img src='./inclogo.jpg'></span>
+                </div>
+                <div>
+                    <span><img src='./project4.jpg'></span>
+                </div>
+                <div>
+                    <span><img src='./project5.jpg'></span>
+                </div>
+                <div>
+                    <span><img src='./project6.jpg'></span>
+                </div>
+        </div>
+        <div class="controlBtns">
+            <button type="button" id="prevBtn"><img src="right-arrow1.jpg"></button>
+            <button type="button" id="nextBtn"><img src="right-arrow1.jpg"></button>
+        </div>
+      
+      </div>
+      <p id="textPara">
+        <div id="buttonTabs">
+            <button type="button" id="aboutBtn">About</button>
+            <button type="button" id="contact">Contact Us</button>
+            <button type="button" id="Projects">Projects</button>
+        </div>
+      
+        <div class="aboutText">
+            <p>
+                Some text with some styling and info about Monarca.  text lorem stuff
+                asfdsfhskklsjdfdsfhakljclkjaio and then some more info with some more
+                and some more and some more and some more and some more and some more
+                and some more and some more and some more and some more and some more
+                and some more and some more and some more and some more and some more
+                and some more and some more and some more and some more and some more
+                and some more and some more and some more and some more and some more.
+            </p>
+      
+      
+            <p>
+                Oh but then paragraph break,
+                and some more and some more and some more and some more and some more
+                and some more and some more and some more and some more and some more
+                and some more and some more and some more and some more and some more
+                and some more and some more and some more and some more and some more.
+            </p>
+      
+      
+            <p>
+                Oh but then ANOTHER paragraph break,
+                and some more and some more and some more and some more and some more
+                and some more and some more and some more and some more and some more
+                and some more and some more and some more and some more and some more
+                and some more and some more and some more and some more and some more.
+            </p>
+        </div>
+    </p>
+      
+      <dialog id="dialogBox">
+        <div class="formPart">
+            <form action="" data-netlify="true" method ="POST" id="inputForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+                <label for="name">Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First and Last Name" minlength="3" maxlength="22" required>
+      
+                <fieldset>
+                    <legend>Address</legend>
+                    <input type="text" id="street" name="street" placeholder="Street" minlength="5" required>
+                    <input type="text" id="cityState" name="cityState" placeholder="City, State">
+                    <input type="text" id="zipCode" name="zipCode" placeholder="Zipcode">
+                </fieldset>
+      
+                <fieldset>
+                    <legend>What can we do for you?</legend>
+                        <input type="text" id="explain" name="explain" required>
+                </fieldset>
+                <div class="dialogBtn">
+                    <button type="submit" id="confirmBtn">Confirm</button>
+                    <button type="button" id="cancelBtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+      
+      </dialog>
   </div>
 
-
-  <img src="logocolor.jpg" id="logo1">
-  <div class="frame">
-    
-    <div id="gallery">
-            <div>
-                <span><img src='./inclogo.jpg'></span>
-            </div>
-            <div>
-                <span><img src='./project4.jpg'></span>
-            </div>
-            <div>
-                <span><img src='./project5.jpg'></span>
-            </div>     
-            <div>
-                <span><img src='./project6.jpg'></span>
-            </div>
-    </div>        
-    <div class="controlBtns">
-        <button type="button" id="prevBtn"><img src="right-arrow1.jpg"></button>
-        <button type="button" id="nextBtn"><img src="right-arrow1.jpg"></button>
-    </div>
-
-</div>
-<p id="container">
-    <div id="buttonTabs">
-        <button type="button" id="aboutBtn">About</button>
-        <button type="button" id="contact">Contact Us</button>
-        <button type="button" id="Projects">Projects</button>
-    </div>
-    
-    <div class="aboutText">
-        <p>
-            Some text with some styling and info about Monarca.  text lorem stuff
-            asfdsfhskklsjdfdsfhakljclkjaio and then some more info with some more
-            and some more and some more and some more and some more and some more
-            and some more and some more and some more and some more and some more
-            and some more and some more and some more and some more and some more
-            and some more and some more and some more and some more and some more
-            and some more and some more and some more and some more and some more.
-        </p>
-
-        
-    
-        <p>
-            Oh but then paragraph break,
-            and some more and some more and some more and some more and some more
-            and some more and some more and some more and some more and some more
-            and some more and some more and some more and some more and some more
-            and some more and some more and some more and some more and some more.
-        </p>
-
-        
-        
-        <p>
-            Oh but then ANOTHER paragraph break,
-            and some more and some more and some more and some more and some more
-            and some more and some more and some more and some more and some more
-            and some more and some more and some more and some more and some more
-            and some more and some more and some more and some more and some more.
-        </p>
-    </div>
-<p>
-
-<dialog id="dialogBox">
-
-    <div class="formPart">
-        <form action="" data-netlify="true" method ="POST" id="inputForm">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            
-            <label for="name">Name:</label>
-            <input type="text" id="firstName" name="firstName" placeholder="First and Last Name" minlength="3" maxlength="22" required>
-            
-
-            <fieldset>
-                <legend>Address</legend>
-                <input type="text" id="street" name="street" placeholder="Street" minlength="5" required>
-
-                <input type="text" id="cityState" name="cityState" placeholder="City, State">
-
-                <input type="text" id="zipCode" name="zipCode" placeholder="Zipcode">
-            </fieldset>
-            
-            <fieldset>
-                <legend>What can we do for you?</legend>
-                    <input type="text" id="explain" name="explain" required>
-            </fieldset>
-
-            <div class="dialogBtn">
-                <button type="submit" id="confirmBtn">Confirm</button>
-                <button type="button" id="cancelBtn">Cancel</button>
-            </div>
-        </form>
-    </div>
-
-</dialog>
+<canvas></canvas>
 </body>
 </html>
